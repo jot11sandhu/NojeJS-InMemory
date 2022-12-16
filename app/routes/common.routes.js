@@ -2,6 +2,8 @@ module.exports = app => {
     const results = require("../controllers/common.controller.js");
   
     var router = require("express").Router();
+    // Health Check
+    router.get("/",(req,res) => {res.send("Server is up !!!")});
   
     // Create a new post
     router.post("/posts", results.create);
