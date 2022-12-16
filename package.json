@@ -4,7 +4,7 @@
   "description": "Result Management System",
   "main": "app.js",
   "scripts": {
-    "start": "nodemon app\\app.js"
+    "start": "node app.js"
   },
   "keywords": [
     "node",
