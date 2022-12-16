@@ -10,6 +10,6 @@ require("./app/routes/common.routes")(app);
 
 const URL = "http://localhost:";
 const PORT = 8080;
-app.listen(PORT, ()=>{
+app.listen(process.env.PORT || PORT, ()=>{
     console.log(`Server is running on port : ${PORT}`);
 });
