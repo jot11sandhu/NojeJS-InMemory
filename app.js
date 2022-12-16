@@ -6,7 +6,7 @@ app.use(express.json());
 app.use(express.urlencoded({extended : false}));
 app.use(cors());
 
-require("./routes/common.routes")(app);
+require("./app/routes/common.routes")(app);
 
 const URL = "http://localhost:";
 const PORT = 8080;
